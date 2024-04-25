@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Design I</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* Background color of the navbar  */
+        .navbar {
+            background-color: #FFFF33;
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* Logo styling */
+        .navbar-brand {
+            color: #FF00CC;
+            font-size: 21pt;
+            font-family: 'Roboto Slab', serif;
+
+        }
+
+        /* Link colors */
+        .navbar ul li a {
+            color: #FF00CC;
+            font-family: 'Lato', sans-serif;
+            text-transform: uppercase;
+
+        }
+
+        /* Handles the background color and border of the hammburger*/
+        .navbar-toggler {
+            background-color: #FF00CC;
+            border: 1px solid #333;
+        }
+
+        /* Most annoying - this handles the lines of the hamburger.
+        Gotta change the rgba(255,0,0, 1) to your color.  It is (red,green,blue,transparency).
+        You can also change the look of it with the other settings.
+        */
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 51, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+
+        .splash {
+            margin-top: 40px;
+        }
+
+        .yellowbg {
+            background-color: #f5f5a9;
+            border-top: 1px solid #ccc;
+        }
+
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            color: #FF00CC;
+        }
+
+        .boxclass {
+            max-width: 600px;
+            margin: 30px auto;
+
+            font-size: 14pt;
+
+        }
+
+        .checktop {
+            font-size: 16pt;
+            font-family: 'Roboto Slab', serif;
+            color: #FF00CC;
+        }
+
+        .list-group-item {
+            padding: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <!-- removed "bg-body-tertiary" -->
+        <div class="container max-navbar">
+            <a class="navbar-brand" href="#">Web Design I</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#checkbox">Instructions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com" target="_blank">Github</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section class="py-5 text-center splash">
+        <div class="row py-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Using Github for our websites</h1>
+                <p class="lead text-body-secondary">GitHub is a site commonly used by coders, developers, designers, etc. to host shared projects. One benefit of GitHub is it creates “versions” of your files, letting you go back to previous versions if you mess something up. We will be using this as a free web host.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="yellowbg">
+        <section id="checkbox" class="d-flex flex-column flex-md-row p-4 gap-4 py-md-8 align-items-center justify-content-center">
+
+            <div class="list-group flex-fill boxclass">
+                <label class="list-group-item d-flex gap-2">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>
+                        <span class="checktop">Does your site follow naming rules?</span>
+                        <small class="d-block text-body-secondary">First page is index.html</small>
+
+                        <small class="d-block text-body-secondary">No spaces, weird characters, etc.</small>
+                        <small class="d-block text-body-secondary">Same rules for images and other files as well</small>
+                    </span>
+                </label>
+                <label class="list-group-item d-flex gap-2">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>
+                        <span class="checktop">Signup for account on GitHub</span>
+                        <small class="d-block text-body-secondary">Make note of your user name</small>
+                    </span>
+                </label>
+                <label class="list-group-item d-flex gap-2">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>
+                        <span class="checktop">Go to Repositories tab</span>
+                        <small class="d-block text-body-secondary">After getting logged in, of course</small>
+
+                        <small class="d-block text-body-secondary">Click “New” to create a new Repository</small>
+                    </span>
+                </label>
+
+                <label class="list-group-item d-flex gap-2">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>
+                        <span class="checktop">On the “Create a new repository” page</span>
+                        <small class="d-block text-body-secondary">Repository name: <b>MUST BE</b> <i>[yourusername].github.io</i></small>
+
+                        <small class="d-block text-body-secondary">You can ignore the other settings</small>
+                    </span>
+                </label>
+
+                <label class="list-group-item d-flex gap-2">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>
+                        <span class="checktop">Next page: Look for <i>Uploading an existing file</i></span>
+                        <small class="d-block text-body-secondary">This next page looks complicated
+                        </small>
+                        <small class="d-block text-body-secondary">Just giving you all the options for working with Git
+                        </small>
+
+                        <small class="d-block text-body-secondary">Look for <i>Uploading an existing file</i> under Quick Setup</small>
+                    </span>
+                </label>
+
+                <label class="list-group-item d-flex gap-2">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>
+                        <span class="checktop">Upload your files</span>
+                        <small class="d-block text-body-secondary">On the next page, you can just drag files to add them
+                        </small>
+                        <small class="d-block text-body-secondary">Only add site-related files
+                        </small>
+
+                        <small class="d-block text-body-secondary">Click commit</small>
+                        <small class="d-block text-body-secondary">You can later add more files by clicking the “Add File” link</small>
+                    </span>
+                </label>
+
+                <label class="list-group-item d-flex gap-2">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>
+                        <span class="checktop">Check out your site!</span>
+                        <small class="d-block text-body-secondary">Look at your site on: <i>[yourusername].github.io</i></small>
+
+                       
+                    </span>
+                </label>
+                
+                 <label class="list-group-item d-flex gap-2">
+                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                    <span>
+                        <span class="checktop">Fix things?</span>
+                        <small class="d-block text-body-secondary">You can go back to the repository to add/delete files</small>
+ <small class="d-block text-body-secondary">Github will ask you to "commit" changes</small>
+                        <small class="d-block text-body-secondary">Changes may take a moment to update</small>
+                    </span>
+                </label>
+
+            </div>
+
+
+        </section>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
